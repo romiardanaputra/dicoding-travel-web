@@ -37,13 +37,43 @@
   <main>
     <!-- slider section start -->
     <section class="carousel">
-      <div class="carousel__container">
-        <div class="slider__content">
-          <div class="slider__content-img">
-            <h1>Melalie</h1>
-            <p>Travel Web</p>
+      <div class="slider">
+        <!-- fade css -->
+        <div class="myslide fade">
+          <div class="txt">
+            <h2>IMAGE 1</h2>
+            <p>Web Devoloper<br />The code for this Slider is provided below</p>
           </div>
+          <img class="slider_img" src="https://www.jqueryscript.net/dummy/1.jpg" />
         </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h2>IMAGE 2</h2>
+            <p>Web Devoloper<br />The code for this Slider is provided below</p>
+          </div>
+          <img class="slider_img" src="https://www.jqueryscript.net/dummy/2.jpg" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h2>IMAGE 3</h2>
+            <p>Web Devoloper<br />The code for this Slider is provided below</p>
+          </div>
+          <img class="slider_img" src="https://www.jqueryscript.net/dummy/3.jpg" />
+        </div>
+        <!-- /fade css -->
+
+        <!-- onclick js -->
+        <a class="prev" onclick="plusSlides(-1)"><i class="bx bx-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="bx bx-chevron-right"></i></a>
+
+        <div class="dotsbox" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- /onclick js -->
       </div>
     </section>
     <!-- slider section end -->
@@ -84,7 +114,11 @@
   </main>
 
   <footer></footer>
+  <script src="./js/carousel.js" type="module"></script>
   <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
+
+
+<!-- https://codepen.io/Coding_Journey/pen/yWjWKd -->
