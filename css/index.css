@@ -1,0 +1,7 @@
+@import url("variable.css");
+@import url("global.css");
+@import url("navbar.css");
+@import url("components/carousel/index.css");
+@import url("components/card/reccomendation-card.css");
+@import url("components/card/service-card.css");
+@import url("components/testimonial/index.css");
