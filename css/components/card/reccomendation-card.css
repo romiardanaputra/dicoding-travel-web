@@ -1,0 +1,92 @@
+.reccomendation {
+  margin-block: 4em;
+}
+
+.reccomendation h1 {
+  font-size: var(--text-3xl);
+}
+
+.reccomendation__header {
+  margin-block: 1em;
+  width: 35%;
+}
+.reccomendation__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reccomendation__card {
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(100% / 1);
+}
+
+.reccomendation__card button {
+  width: 50%;
+  padding: 0.8em;
+  background-color: var(--accent);
+  border: none;
+  color: var(--primary);
+  border-radius: 0.5em;
+  font-size: 1em;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.reccomendation__content {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  gap: 1em;
+}
+
+.reccomendation__card-body .price {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.reccomendation__card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.reccomendation__card .reccomendation__card-content {
+  padding: 1rem;
+}
+.reccomendation__card h3 {
+  font-size: 1.25rem;
+  margin-block: 0.8rem;
+  margin-inline: 1rem;
+}
+.reccomendation__card p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+  margin-inline: 1rem;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+@media (min-width: 678px) {
+  .reccomendation__card {
+    flex: 0 0 calc(100% / 2 - 1em);
+  }
+}
+
+@media (min-width: 940px) {
+  .reccomendation__card {
+    flex: 0 0 calc(100% / 3 - 1em);
+  }
+}
+
+@media (min-width: 1228px) {
+  .reccomendation__card {
+    flex: 0 0 calc(100% / 4 - 1.2em);
+  }
+}
