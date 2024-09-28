@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Melalie adalah website yang dibuat untuk memberikan rekomendasi pengalaman yang unik dalam berlibur ke Bali" />
+  <meta name="keywords" content="travel, bali, travel bali" />
+  <title>Melalie | Travel Web</title>
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <!-- font poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="container">
+  <header class="header">
+    <nav>
+      <a href="/">Melalie</a>
+      <ul class="nav__links" hidden>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <img src="./assets/icons/menu-2.svg" alt="menu-icon" />
+    </nav>
+  </header>
+
+  <main>
+    <!-- slider section start -->
+    <section class="carousel">
+      <div class="carousel__container">
+        <div class="slider__content">
+          <div class="slider__content-img">
+            <h1>Melalie</h1>
+            <p>Travel Web</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider section end -->
+
+    <!-- reccomendation section start -->
+    <section class="reccomendation">
+      <div class="reccomendation__header">
+        <h1>What We Reccomend For You</h1>
+        <p> - We strongly reccomend and pick based on our team filtered the destinations </p>
+      </div>
+
+      <div class="reccomendation__container">
+        <div class="reccomendation__content" id="reccomendationContent"></div>
+      </div>
+    </section>
+    <!-- reccomendation section end -->
+
+    <!-- our service section start -->
+    <section class="service">
+      <div class="service__header">
+        <h1>Our Service</h1>
+        <p>Take a look around, and let us know if there's anything we can help you with. We're excited to have you on
+          board and look forward to providing you with an exceptional online experience</p>
+      </div>
+      <div class="service__container">
+        <img src="./assets/icons/vector-1.svg" alt="vector-1" class="service-vector" />
+        <div class="service__content" id="serviceContent"></div>
+      </div>
+    </section>
+    <!-- our service section end -->
+
+    <!-- client testimonial section start -->
+    <section class="testimonial">
+      <h1>What Our People Say</h1>
+      <div class="testimonial__content" id="testimonialContent"></div>
+    </section>
+    <!-- client testimonial section end -->
+  </main>
+
+  <footer></footer>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
