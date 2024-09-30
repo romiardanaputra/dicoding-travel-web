@@ -1,42 +1,52 @@
-const myslide = document.querySelectorAll(".myslide"),
-  dot = document.querySelectorAll(".dot");
+const slides = Array.from(document.querySelectorAll(".myslide"));
+
+console.log(slides);
+const dots = Array.from(document.querySelectorAll(".dot"));
 let counter = 1;
-slidefun(counter);
 
-let timer = setInterval(autoSlide, 8000);
-function autoSlide() {
-  counter += 1;
-  slidefun(counter);
-}
-function plusSlides(n) {
-  counter += n;
-  slidefun(counter);
-  resetTimer();
-}
-function currentSlide(n) {
-  counter = n;
-  slidefun(counter);
-  resetTimer();
-}
-function resetTimer() {
+const showSlide = (n) => {
+  const safeCounter = n > slides.length ? 1 : n < 1 ? slides.length : n;
+
+  return {
+    activeSlide: safeCounter,
+    slidesState: slides.map((_, index) =>
+      index + 1 === safeCounter ? "block" : "none"
+    ),
+    dotsState: dots.map((_, index) =>
+      index + 1 === safeCounter ? "active" : ""
+    ),
+  };
+};
+
+const updateUI = ({ slidesState, dotsState, activeSlide }) => {
+  slides.forEach((slide, index) => (slide.style.display = slidesState[index]));
+  dots.forEach((dot, index) =>
+    dot.classList.toggle("active", dotsState[index] === "active")
+  );
+  counter = activeSlide;
+};
+
+const changeSlide = (n) => {
+  const newSlideState = showSlide(n);
+  updateUI(newSlideState);
+};
+
+const autoSlide = () => changeSlide(counter + 1);
+
+const resetTimer = (timer) => {
   clearInterval(timer);
-  timer = setInterval(autoSlide, 8000);
-}
+  return setInterval(autoSlide, 5000);
+};
 
-function slidefun(n) {
-  let i;
-  for (i = 0; i < myslide.length; i++) {
-    myslide[i].style.display = "none";
-  }
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active", "");
-  }
-  if (n > myslide.length) {
-    counter = 1;
-  }
-  if (n < 1) {
-    counter = myslide.length;
-  }
-  myslide[counter - 1].style.display = "block";
-  dot[counter - 1].className += " active";
-}
+const plusSlides = (n) => {
+  changeSlide(counter + n);
+  timer = resetTimer(timer);
+};
+
+const currentSlide = (n) => {
+  changeSlide(n);
+  timer = resetTimer(timer);
+};
+
+let timer = resetTimer(null);
+changeSlide(counter);
