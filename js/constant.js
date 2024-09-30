@@ -89,7 +89,7 @@ export const services = [
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah",
+    name: "Eka",
     role: "Web Developer",
     avatar: "./assets/images/bali-besakih.webp",
     avatarAlt: "avatar",
@@ -99,7 +99,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: "Sarah",
+    name: "Romi",
     role: "Web Developer",
     avatar: "./assets/images/bali-besakih.webp",
     avatarAlt: "avatar",
