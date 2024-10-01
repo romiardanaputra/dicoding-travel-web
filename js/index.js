@@ -1,4 +1,4 @@
-import { reccomendations, services, testimonials } from "./constant.js";
+import { recommendations, services, testimonials } from "./constant.js";
 
 const testimonial = {
   starIcon: "./assets/icons/star.svg",
@@ -25,7 +25,7 @@ const generateStars = (count) => {
   ).join("");
 };
 const reccomendationContent = () => {
-  return reccomendations
+  return recommendations
     .map((reccomendation) => {
       return `
       <div class="reccomendation__card">
