@@ -1,4 +1,4 @@
-export const reccomendations = [
+export const recommendations = [
   {
     id: 1,
     title: "Besakih Temple",
