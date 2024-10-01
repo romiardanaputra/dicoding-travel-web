@@ -1,124 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Melalie is a website designed to provide unique travel recommendations for an unforgettable vacation in Bali."
+    />
+    <meta
+      name="keywords"
+      content="travel, Bali, travel Bali, vacation, tourism, Bali tourism"
+    />
+    <meta name="author" content="romiardana" />
+    <meta name="robots" content="index, follow" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description"
-    content="Melalie adalah website yang dibuat untuk memberikan rekomendasi pengalaman yang unik dalam berlibur ke Bali" />
-  <meta name="keywords" content="travel, bali, travel bali" />
-  <title>Melalie | Travel Web</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Melalie | Travel Web" />
+    <meta
+      property="og:description"
+      content="Discover unique travel experiences and recommendations for your Bali vacation with Melalie."
+    />
+    <meta property="og:image" content="https://example.com/path/to/image.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:site_name" content="Melalie" />
 
-  <!-- external stylesheet -->
-  <link rel="stylesheet" href="./css/index.css" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Melalie | Travel Web" />
+    <meta
+      name="twitter:description"
+      content="Discover unique travel experiences and recommendations for your Bali vacation with Melalie."
+    />
+    <meta
+      name="twitter:image"
+      content="https://example.com/path/to/image.jpg"
+    />
+    <meta name="twitter:site" content="@Melalie" />
+    <meta name="twitter:creator" content="@Melalie" />
+    <title>Melalie | Travel Web</title>
 
-  <!-- font poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-</head>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<body class="container">
-  <header class="header">
-    <nav>
-      <a href="/">Melalie</a>
-      <ul class="nav__links" hidden>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-      <img src="./assets/icons/menu-2.svg" alt="menu-icon" />
-    </nav>
-  </header>
-
-  <main>
-    <!-- slider section start -->
-    <section class="carousel">
-      <div class="slider">
-        <!-- fade css -->
-        <div class="myslide fade">
-          <div class="txt">
-            <h2>IMAGE 1</h2>
-            <p>Web Devoloper<br />The code for this Slider is provided below</p>
+  <body class="container">
+    <header class="header">
+      <nav>
+        <a href="/">Melalie</a>
+        <div class="nav__wrapper" id="nav">
+          <ul class="nav__links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#reccomendation">Reccomendation</a></li>
+            <li><a href="#ourservice">Our Service</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+          </ul>
+          <div class="nav__icon-close">
+            <img
+              src="./assets/icons/menu-2.svg"
+              alt="menu-icon"
+              id="navIconClose"
+              class="nav__icon-ham"
+            />
           </div>
-          <img class="slider_img" src="https://www.jqueryscript.net/dummy/1.jpg" />
         </div>
+        <a href="/login" class="nav__btn-wrapper">
+          <button class="nav__btn-cta">Login</button>
+        </a>
+        <img
+          src="./assets/icons/menu-2.svg"
+          alt="menu-icon"
+          id="navIconOpen"
+          class="nav__icon-ham"
+        />
+      </nav>
+    </header>
 
-        <div class="myslide fade">
-          <div class="txt">
-            <h2>IMAGE 2</h2>
-            <p>Web Devoloper<br />The code for this Slider is provided below</p>
+    <main>
+      <section class="carousel">
+        <div class="slider">
+          <div class="myslide fade">
+            <div class="txt">
+              <h2>Let's Discover</h2>
+              <p>Great Destinations<br />More over than 500+ Tourism Object</p>
+            </div>
+            <img
+              class="slider_img"
+              src="./assets/images/bali-campuan-hill.webp"
+            />
           </div>
-          <img class="slider_img" src="https://www.jqueryscript.net/dummy/2.jpg" />
-        </div>
-
-        <div class="myslide fade">
-          <div class="txt">
-            <h2>IMAGE 3</h2>
-            <p>Web Devoloper<br />The code for this Slider is provided below</p>
+          <div class="myslide fade">
+            <div class="txt">
+              <h2>Let's Explore</h2>
+              <p>Great Destinations<br />More over than 500+ Tourism Object</p>
+            </div>
+            <img
+              class="slider_img"
+              src="./assets/images/bali-gitgit-waterfall.webp"
+            />
           </div>
-          <img class="slider_img" src="https://www.jqueryscript.net/dummy/3.jpg" />
+          <div class="myslide fade">
+            <div class="txt">
+              <h2>Let's Find</h2>
+              <p>Great Destinations<br />More over than 500+ Tourism Object</p>
+            </div>
+            <img
+              class="slider_img"
+              src="./assets/images/bali-monkey-forest.webp"
+            />
+          </div>
+          <div class="dotsbox" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
-        <!-- /fade css -->
+      </section>
 
-        <!-- onclick js -->
-        <a class="prev" onclick="plusSlides(-1)"><i class="bx bx-chevron-left"></i></a>
-        <a class="next" onclick="plusSlides(1)"><i class="bx bx-chevron-right"></i></a>
-
-        <div class="dotsbox" style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+      <section class="reccomendation" id="reccomendation">
+        <div class="reccomendation__header">
+          <h1>What We Reccomend For You</h1>
+          <p>
+            - We strongly reccomend and pick based on our team filtered the
+            destinations
+          </p>
         </div>
-        <!-- /onclick js -->
+        <div class="reccomendation__container">
+          <article
+            class="reccomendation__content"
+            id="reccomendationContent"
+          ></article>
+        </div>
+      </section>
+
+      <section class="service" id="ourservice">
+        <aside class="service__header">
+          <h1>Our Service</h1>
+          <p>
+            Take a look around, and let us know if there's anything we can help
+            you with. We're excited to have you on board and look forward to
+            providing you with an exceptional online experience
+          </p>
+        </aside>
+        <div class="service__container">
+          <img
+            src="./assets/icons/vector.svg"
+            alt="vector"
+            class="service-vector"
+          />
+          <article class="service__content" id="serviceContent"></article>
+        </div>
+      </section>
+
+      <section class="testimonial" id="testimonial">
+        <h1>What Our People Say</h1>
+        <article class="testimonial__content" id="testimonialContent"></article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        copyright 2024. All rights reserved romiardana, assets by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a>
       </div>
-    </section>
-    <!-- slider section end -->
-
-    <!-- reccomendation section start -->
-    <section class="reccomendation">
-      <div class="reccomendation__header">
-        <h1>What We Reccomend For You</h1>
-        <p> - We strongly reccomend and pick based on our team filtered the destinations </p>
-      </div>
-
-      <div class="reccomendation__container">
-        <div class="reccomendation__content" id="reccomendationContent"></div>
-      </div>
-    </section>
-    <!-- reccomendation section end -->
-
-    <!-- our service section start -->
-    <section class="service">
-      <div class="service__header">
-        <h1>Our Service</h1>
-        <p>Take a look around, and let us know if there's anything we can help you with. We're excited to have you on
-          board and look forward to providing you with an exceptional online experience</p>
-      </div>
-      <div class="service__container">
-        <img src="./assets/icons/vector-1.svg" alt="vector-1" class="service-vector" />
-        <div class="service__content" id="serviceContent"></div>
-      </div>
-    </section>
-    <!-- our service section end -->
-
-    <!-- client testimonial section start -->
-    <section class="testimonial">
-      <h1>What Our People Say</h1>
-      <div class="testimonial__content" id="testimonialContent"></div>
-    </section>
-    <!-- client testimonial section end -->
-  </main>
-
-  <footer></footer>
-  <script src="./js/carousel.js" type="module"></script>
-  <script src="./js/index.js" type="module"></script>
-</body>
-
+    </footer>
+    <script src="./js/carousel.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/navbar.js" type="module"></script>
+  </body>
 </html>
-
-
-<!-- https://codepen.io/Coding_Journey/pen/yWjWKd -->
