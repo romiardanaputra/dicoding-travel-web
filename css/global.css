@@ -1,17 +1,15 @@
-/* global css */
 @font-face {
   font-family: "Averta";
   src: url("../assets/fonts/AvertaDemoPECuttedDemo-Regular.otf")
     format("opentype");
 }
-/* css reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* body base style */
 body {
   font-family: "Averta", sans-serif;
   font-size: 16px;
@@ -31,7 +29,6 @@ li {
   list-style-type: none;
 }
 
-/* utility classes */
 .container {
   max-width: 1400px;
   margin: 0 auto;
